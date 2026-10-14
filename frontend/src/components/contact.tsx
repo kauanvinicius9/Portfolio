@@ -32,13 +32,13 @@ export function Contact() {
     e.preventDefault();
 
     if (!name_regex.test(name.trim())) {
-      setStatusMessage("Insira um nome válido (mínimo de 02 caracteres).");
+      setStatusMessage("Insira um nome válido (mínimo de 02 caracteres)");
       setStatusType("error");
       return;
     }
 
     if (!email_regex.test(email.trim())) {
-      setStatusMessage("Insira um e-mail com format válido");
+      setStatusMessage("Insira um e-mail com formato válido");
       setStatusType("error");
       return;
     }
@@ -65,7 +65,7 @@ export function Contact() {
 
     } catch (err) {
       console.log("EmailJS Error:", err);
-      setStatusMessage("Erro ao enviar e-mail. Tente novamente");
+      setStatusMessage("Erro ao enviar e-mail");
       setStatusType("error");
 
     } finally {

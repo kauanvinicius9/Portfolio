@@ -1,0 +1,60 @@
+@use "../variables" as *;
+
+
+* {
+  font-family: $font-family;
+}
+
+.footer {
+  background: $bg-footer;
+  border-top: 1px solid $border-color;
+  padding: 2.5rem 1.5rem;
+
+  &__container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: $bg-card;
+    border: 1px solid $border-color;
+    color: $text-muted;
+    font-size: 1.2rem;
+    transition: $transition;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-white;
+      background: $blue-glow;
+      border-color: $blue-primary;
+    }
+  }
+
+  &__icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  &__copyright {
+    color: $text-muted;
+    font-size: 0.9rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}

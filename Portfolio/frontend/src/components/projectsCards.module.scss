@@ -1,0 +1,70 @@
+@use "../variables" as *;
+
+* {
+  font-family: $font-family;
+}
+
+.card {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: $transition;
+
+  &:hover {
+    background: $bg-card-hover;
+    border-color: $box-shadow;
+  }
+
+  &__body {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-size: 1.40rem;
+    font-weight: 700;
+    color: $text-main;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+  }
+
+  &__description {
+    color: $text-main;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  &__efficiency {
+    color: $text-muted;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem 1.25rem;
+    border-radius: $radius-sm;
+    background: $blue-primary;
+    color: $color-white;
+    border: 1px solid $box-shadow;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: $transition;
+  }
+}
